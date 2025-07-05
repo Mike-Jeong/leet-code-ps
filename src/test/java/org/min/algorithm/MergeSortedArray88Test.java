@@ -3,8 +3,7 @@ package org.min.algorithm;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
-import java.util.Arrays;
+import org.min.algorithm.util.StringUtil;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -19,25 +18,13 @@ class MergeSortedArray88Test {
     })
     void merge(String nums1String, int m, String nums2String, int n, String answerString) {
 
-        int[] nums1 = convertStringToIntArray(nums1String);
-        int[] nums2 = convertStringToIntArray(nums2String);
-        int[] answer = convertStringToIntArray(answerString);
+        int[] nums1 = StringUtil.convertStringToIntArray(nums1String);
+        int[] nums2 = StringUtil.convertStringToIntArray(nums2String);
+        int[] answer = StringUtil.convertStringToIntArray(answerString);
 
         MergeSortedArray88 mergeSortedArray88 = new MergeSortedArray88();
         mergeSortedArray88.merge(nums1, m, nums2, n);
 
         assertThat(nums1).containsExactly(answer);
-    }
-
-    private int[] convertStringToIntArray(String inputString) {
-        int[] convertedInputArray = inputString == null || inputString.trim().isEmpty()
-                ? new int[0]
-                : Arrays.stream(inputString.split(","))
-                .map(String::trim)
-                .filter(s -> !s.isEmpty())
-                .mapToInt(Integer::parseInt)
-                .toArray();
-
-        return convertedInputArray;
     }
 }

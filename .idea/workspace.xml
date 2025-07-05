@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea9261e-32b2-4bfe-84e5-e12a64f7ef01" name="Changes" comment="feat : solve 88. Merge Sorted Array (05072025)" />
+    <list default="true" id="7ea9261e-32b2-4bfe-84e5-e12a64f7ef01" name="Changes" comment="Merge branch 'main' to local">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/min/algorithm/RemoveElement27.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/min/algorithm/RemoveElement27Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/min/algorithm/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/min/algorithm/MergeSortedArray88Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/min/algorithm/MergeSortedArray88Test.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,7 +50,8 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -52,8 +61,11 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.min.algorithm" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.min.algorithm" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.MergeSortedArray88Test.merge">
+  <component name="RunManager" selected="Gradle.RemoveElement27Test.removeElement">
     <configuration name="MergeSortedArray88" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.min.algorithm.MergeSortedArray88" />
       <module name="leet-code-ps.main" />
@@ -113,8 +125,32 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="RemoveElement27Test.removeElement" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.min.algorithm.RemoveElement27Test.removeElement&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RemoveElement27Test.removeElement" />
         <item itemvalue="Gradle.MergeSortedArray88Test.merge" />
         <item itemvalue="Gradle.MergeSortedArray88Test" />
         <item itemvalue="Application.MergeSortedArray88" />
@@ -129,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751632876085</updated>
-      <workItem from="1751632877483" duration="5340000" />
+      <workItem from="1751632877483" duration="9106000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1751639788688</created>
@@ -145,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1751639833536</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge branch 'main' to local">
+      <created>1751640162114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751640162114</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +208,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <MESSAGE value="feat : solve 88. Merge Sorted Array (05072025)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : solve 88. Merge Sorted Array (05072025)" />
+    <MESSAGE value="me" />
+    <MESSAGE value="Merge branch 'main' to local" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'main' to local" />
   </component>
 </project>
