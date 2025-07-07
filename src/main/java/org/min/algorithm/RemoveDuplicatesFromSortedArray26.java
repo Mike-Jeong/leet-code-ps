@@ -10,16 +10,14 @@ import java.util.stream.Collectors;
 public class RemoveDuplicatesFromSortedArray26 {
 
     public int removeDuplicates(int[] nums) {
-        Set<Integer> numsSet = Arrays.stream(nums)
-                .boxed()
-                .collect(Collectors.toCollection(LinkedHashSet::new));
-
         int i = 0;
-        for (int num:numsSet) {
-            nums[i] = num;
-            i++;
+        int n = nums.length;
+        for(int j = 1; j < n; j++) {
+            if (nums[i] != nums[j]) {
+                i++;
+                nums[i] = nums[j];
+            }
         }
-
-        return numsSet.size();
+        return i + 1;
     }
 }
