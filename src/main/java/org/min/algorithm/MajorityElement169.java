@@ -5,21 +5,20 @@ package org.min.algorithm;
 public class MajorityElement169 {
 
     public int majorityElement(int[] nums) {
-        int basis = 0;
-        for (int i = 0; i < nums.length; i++) {
-             basis = Math.max(Math.abs(nums[i]), basis);
-        }
+        int major = nums[0];
+        int count = 1;
 
-        int[] indexes = new int[2 * basis + 2];
-
-        for (int i = 0; i < nums.length; i++) {
-            indexes[nums[i] + basis]++;
-
-            if (indexes[nums[i] + basis] > nums.length / 2) {
-                return nums[i];
+        for (int i = 1; i < nums.length; i++) {
+            if (count == 0) {
+                count++;
+                major = nums[i];
+            } else if (major == nums[i]) {
+                count++;
+            } else {
+                count--;
             }
         }
 
-        return nums[0];
+        return major;
     }
 }
