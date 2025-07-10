@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class MajorityElement169Test {
 
-    @DisplayName("Test with the case given in \"80. Remove Duplicates from Sorted ArrayII\"")
+    @DisplayName("Test with the case given in \"169. Majority Element\"")
     @ParameterizedTest
     @CsvSource({
             "'3,2,3', 3",
